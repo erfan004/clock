@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #252525;
+}
+.clock{
+    margin: 15px auto ;
+    width: 400px;
+    height: 400px;
+    background-color: black;
+    border: 3px solid rgb(176, 150, 4);
+    border-radius: 50%;
+    position: relative;
+}
+.clock::after{
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    background-color: gray;
+    top: 48%;
+    left: 50%;
+    border-radius: 50%;
+    transform: translateX(-50% );
+}
+.mainTime{
+    background-color: rgb(130, 44, 44);
+    width: 5px;
+    height: 20px;
+    position: absolute;
+}
+.twelve{
+    top: 0;
+    left:50%;
+    transform: translateX(-50%);
+}
+.three{
+    right: 8px;
+    transform: rotate(90deg);
+    top: 50%;
+}
+.six{
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.nine{
+    left: 8px;
+    transform: rotate(90deg);
+    top: 50%;
+}
+.hand{
+    width: 10px;
+    height: 160px;
+    position: absolute;
+    transform-origin: bottom;
+    left: 48.7%;
+    border-top-left-radius:30px ;
+    border-top-right-radius:30px ;
+    top: 12%;
+}
+.sec{
+    background-color: rgb(130, 44, 44);
+}
+.min{
+    background-color: #ccc;
+}
+.hour{
+    height: 100px;
+    background-color: rgb(196, 170, 20);
+    top: 27.2%;
+}
+.time{
+    position: absolute;
+    width: 5px;
+    height: 15px;
+    background-color: #ccc;
+}
+.time:nth-of-type(2){
+    right: 23%;
+    top: 7%;
+    rotate: 30deg;
+}
+.time:nth-of-type(3){
+    right: 6%;
+    top: 26%;
+    rotate: 60deg;
+}
+.time:nth-of-type(5){
+    right: 8%;
+    top: 74%;
+    rotate: 120deg;
+}
+.time:nth-of-type(6){
+    right: 27%;
+    top: 90.5%;
+    rotate: 150deg;
+}
+.time:nth-of-type(8){
+    left: 26.5%;
+    top: 90.5%;
+    rotate: 210deg;
+}
+.time:nth-of-type(9){
+    left: 8%;
+    top: 73%;
+    rotate: 240deg;
+}
+.time:nth-of-type(11){
+    left: 6%;
+    top: 26%;
+    rotate: 300deg;
+}
+.time:nth-of-type(12){
+    left: 23%;
+    top: 7%;
+    rotate: 330deg;
+}
